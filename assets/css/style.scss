@@ -5,6 +5,7 @@
 
 // Light grey: #ececec
 // Charcoal grey: #33383D
+// Dark brown: #342E2E
 // White
 // Vibrant teal (#00B3A4 or similar)
 // Accent (optional): Soft teal or mint for subtle highlighting
@@ -26,7 +27,7 @@ body.default {
 }
 
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
-    color: 	#33383D;
+    color: 	#342E2E;
 }
 
 /* Top bar */
@@ -46,13 +47,13 @@ body.default {
 .top-nav .brand {
   text-decoration: none;
   font-size: 18pt;
-  color: #33383D;
+  color: #342E2E;
 }
 
 .top-nav-menu a {
   margin-left: 1.5rem;
   text-decoration: none;
-  color: #33383D;
+  color: #342E2E;
 }
 
 .top-nav-menu a.active {
@@ -70,12 +71,10 @@ body.default {
 /* Hero on homepage */
 .hero {
   padding-top: 8rem;
-  padding-bottom: 5rem;
+  padding-bottom: 2.5rem;
   text-align: center;
   color: white;
   background-image: url("/assets/images/hero-banner.png");
-    /* "https://images.squarespace-cdn.com/content/v1/693f17274c45ce6d5d178077/1755197346.114838-VDNXHCKGSNBMXCAPTXUV/imgg-od3-h2rju4hb.png");
-    */
 }
 
 .project-name{
@@ -84,13 +83,150 @@ body.default {
     font-weight: normal;
 }
 
-.hero-btn {
+.btn.dark{
   margin-top: 2rem;
   border-radius: 2rem;
-  /*background-color: rgb(58, 48, 48);*/
-  background-color: #33383D;
+  background-color: #342E2E;
 }
-.hero-btn:hover {
-    /*background-color: rgb(84, 71, 71);*/
+.btn.dark:hover {
     background-color: #44494f;
+}
+
+/* Homepage sections */
+.homepage .main-content {
+  padding-top: 2.5rem;
+}
+
+.about-section,
+.services-section {
+  padding: 2rem 0;
+}
+
+.about-grid,
+.services-grid,
+.section-header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 1fr) minmax(320px, 1.1fr);
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+  display: block;
+  border-radius: 1.5rem;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+}
+
+.about-copy h2 {
+  font-size: 2.5rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.about-copy p {
+  line-height: 1.7;
+  color: #40454a;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.85rem;
+  color: #00b3a4;
+  margin: 0;
+  font-weight: 700;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.section-header h2 {
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-header p {
+  color: #4c5257;
+  margin: 0;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 1.25rem;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.12);
+}
+
+.service-card h3 {
+  font-size: 1.4rem;
+  padding: 1.25rem 1.25rem 0;
+  margin: 0;
+}
+
+.service-image {
+  height: 220px;
+  overflow: hidden;
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.service-card p {
+  padding: 1rem 1.25rem 1.5rem;
+  color: #40454a;
+  line-height: 1.6;
+}
+
+@media (max-width: 960px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-copy h2,
+  .section-header h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .main-content {
+    padding: 3rem 1.5rem;
+  }
+
+  .about-section,
+  .services-section {
+    padding: 3.5rem 0;
+  }
+
+  .btn.dark.pill {
+    width: 100%;
+    text-align: center;
+  }
 }
