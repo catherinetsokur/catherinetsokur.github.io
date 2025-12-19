@@ -339,6 +339,8 @@ body.default { background-color: #ececec; }
 
 .top-nav-menu a.active { text-decoration: underline; }
 
+.page-header { background-color: white; }
+
 .homepage .top-nav .brand { color: white; }
 
 .homepage .top-nav-menu a { color: white; }
