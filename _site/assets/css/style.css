@@ -326,7 +326,7 @@ a:hover { text-decoration: underline; }
 
 body.default { background-color: #ececec; }
 
-.main-content { max-width: none; width: 100%; padding: 4rem; margin: 0; font-size: 1.1rem; }
+.main-content { max-width: none; width: 100%; padding: 6rem; margin: 0; font-size: 1.1rem; }
 
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 { color: #342E2E; }
 
@@ -396,3 +396,7 @@ body.default { background-color: #ececec; }
 @media (max-width: 640px) { .main-content { padding: 3rem 1.5rem; }
   .about-section, .services-section { padding: 3.5rem 0; }
   .btn.dark.pill { width: 100%; text-align: center; } }
+/* About page */
+.about-page { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 3rem; align-items: start; }
+
+.about-photo img { width: 100%; display: block; border-radius: 1rem; box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12); object-fit: cover; }

@@ -21,7 +21,7 @@ body.default {
 .main-content {
   max-width: none;
   width: 100%;
-  padding: 4rem;
+  padding: 6rem;
   margin: 0;
   font-size: 1.1rem;
 }
@@ -226,11 +226,27 @@ body.default {
 
   .about-section,
   .services-section {
-    padding: 3.5rem 0;
+  padding: 3.5rem 0;
   }
 
   .btn.dark.pill {
     width: 100%;
     text-align: center;
   }
+}
+
+/* About page */
+.about-page {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+  align-items: start;
+}
+
+.about-photo img {
+  width: 100%;
+  display: block;
+  border-radius: 1rem;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+  object-fit: cover;
 }
