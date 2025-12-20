@@ -250,3 +250,61 @@ body.default {
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
   object-fit: cover;
 }
+
+/* Contact page */
+.contact-page {
+  max-width: 800px;
+  margin: 4rem auto 6rem;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.contact-form {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.field-group {
+  display: grid;
+  gap: 1rem;
+}
+
+.field-group.two-col {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.field label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.field .required {
+  font-weight: 400;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 0.9rem 1.1rem;
+  border: 1px solid #5a5452;
+  border-radius: 1.6rem;
+  background: #f9f9f9;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 120ms ease, box-shadow 120ms ease;
+}
+
+.field textarea {
+  border-radius: 1.2rem;
+  min-height: 160px;
+  resize: vertical;
+}
+
+.field input:focus,
+.field textarea:focus {
+  box-shadow: 0 0 0 3px rgba(51, 56, 61, 0.14);
+}
