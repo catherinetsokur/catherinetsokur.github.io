@@ -375,13 +375,14 @@ a:hover { text-decoration: underline; }
 
 .service-card p { padding: 1rem 1.25rem 1.5rem; line-height: 1.6; }
 
-@media (max-width: 960px) { .about-grid { grid-template-columns: 1fr; }
-  .about-copy h2, .section-header h2 { font-size: 2rem; } }
+@media (max-width: 960px) { .about-grid { grid-template-columns: 1fr; } }
 @media (max-width: 640px) { .main-content { padding: 3rem 1.5rem; }
   .about-section, .services-section { padding: 3.5rem 0; }
   .btn.dark { width: 100%; text-align: center; } }
 /* About page */
 .about-page { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 3rem; align-items: start; }
+
+.about-page-section { margin-bottom: 2rem; }
 
 .about-photo img { width: 100%; display: block; border-radius: 1rem; box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12); object-fit: cover; }
 

@@ -179,11 +179,6 @@
   .about-grid {
     grid-template-columns: 1fr;
   }
-
-  .about-copy h2,
-  .section-header h2 {
-    font-size: 2rem;
-  }
 }
 
 @media (max-width: 640px) {
@@ -208,6 +203,10 @@
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 3rem;
   align-items: start;
+}
+
+.about-page-section {
+    margin-bottom: 2rem;
 }
 
 .about-photo img {
