@@ -19,23 +19,48 @@
         {{ site.title | default: site.github.repository_name }}
       </a>
 
-      <nav class="top-nav-menu">
-        <a href="{{ '/about/' | relative_url }}"
-           class="{% if page.url == '/about/' %}active{% endif %}">
-          About
-        </a>
-        <a href="{{ '/contact/' | relative_url }}"
-           class="{% if page.url == '/contact/' %}active{% endif %}">
-          Contact
-        </a>
+      <div class="nav-actions">
+        <nav class="top-nav-menu">
+          <a href="{{ '/about/' | relative_url }}"
+             class="{% if page.url == '/about/' %}active{% endif %}">
+            About
+          </a>
+          <a href="{{ '/contact/' | relative_url }}"
+             class="{% if page.url == '/contact/' %}active{% endif %}">
+            Contact
+          </a>
 <!--
         <a href="{{ '/blog/' | relative_url }}"
            class="{% if page.url == '/blog/' or page.url contains '/blog/' %}active{% endif %}">
           Blog
         </a>
 -->
-      </nav>
+        </nav>
+
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="menu-lines" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
     </header>
+
+    <div class="mobile-menu-overlay" id="mobile-menu" hidden>
+      <div class="mobile-menu-top">
+        <a class="brand" href="{{ '/' | relative_url }}">
+          {{ site.title | default: site.github.repository_name }}
+        </a>
+        <button class="mobile-menu-close" type="button" aria-label="Close navigation">
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+      <nav class="mobile-menu-nav" aria-label="Mobile">
+        <a href="{{ '/about/' | relative_url }}">About</a>
+        <a href="{{ '/contact/' | relative_url }}">Contact</a>
+      </nav>
+    </div>
 
     
     {% if page.homepage %}
@@ -56,5 +81,48 @@
       </footer>
 
     </main>
+
+    <script>
+      (() => {
+        const toggle = document.querySelector('.menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeButton = mobileMenu?.querySelector('.mobile-menu-close');
+
+        if (!toggle || !mobileMenu || !closeButton) return;
+
+        const openMenu = () => {
+          mobileMenu.hidden = false;
+          document.body.classList.add('mobile-menu-open');
+          toggle.setAttribute('aria-expanded', 'true');
+        };
+
+        const closeMenu = () => {
+          mobileMenu.hidden = true;
+          document.body.classList.remove('mobile-menu-open');
+          toggle.setAttribute('aria-expanded', 'false');
+        };
+
+        toggle.addEventListener('click', () => {
+          if (mobileMenu.hidden) {
+            openMenu();
+          } else {
+            closeMenu();
+          }
+        });
+
+        closeButton.addEventListener('click', closeMenu);
+        mobileMenu.addEventListener('click', (event) => {
+          if (event.target === mobileMenu) {
+            closeMenu();
+          }
+        });
+
+        document.addEventListener('keydown', (event) => {
+          if (event.key === 'Escape' && !mobileMenu.hidden) {
+            closeMenu();
+          }
+        });
+      })();
+    </script>
   </body>
 </html>

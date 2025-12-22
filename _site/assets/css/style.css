@@ -333,11 +333,15 @@ a:hover { text-decoration: underline; }
 .btn.dark:hover { background-color: #483C32; }
 
 /* Top bar */
-.top-nav { top: 0; left: 0; right: 0; display: flex; align-items: center; justify-content: space-between; padding: 1.25rem 2rem; background: transparent; z-index: 1000; height: 80px; }
+.top-nav { color: #35281E; top: 0; left: 0; right: 0; display: flex; align-items: center; justify-content: space-between; padding: 1.25rem 2rem; background: transparent; z-index: 1000; height: 80px; }
 
-.top-nav .brand { text-decoration: none; font-size: 18pt; color: #35281E; }
+.top-nav .brand { text-decoration: none; font-size: 18pt; color: inherit; }
 
-.top-nav-menu a { margin-left: 1.5rem; text-decoration: none; color: #35281E; }
+.nav-actions { display: flex; align-items: center; gap: 0.75rem; }
+
+.top-nav-menu { display: flex; align-items: center; }
+
+.top-nav-menu a { margin-left: 1.5rem; text-decoration: none; color: inherit; }
 
 .top-nav-menu a.active { text-decoration: underline; }
 
@@ -348,7 +352,43 @@ a:hover { text-decoration: underline; }
 
 .project-name { width: 60%; margin: auto; font-weight: normal; margin-bottom: 2rem; }
 
-.homepage .top-nav a { color: white; }
+.homepage .top-nav { color: white; }
+
+.homepage .top-nav a { color: inherit; }
+
+.menu-toggle { display: none; border: none; background: transparent; color: inherit; cursor: pointer; padding: 0.35rem; }
+
+.menu-toggle .menu-lines { display: flex; flex-direction: column; gap: 6px; width: 28px; }
+
+.menu-toggle .menu-lines span { display: block; width: 100%; height: 2px; background-color: currentColor; border-radius: 2px; }
+
+.mobile-menu-overlay { position: fixed; inset: 0; background: #E5E4E2; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2rem; padding: 1.75rem 1.5rem; z-index: 1200; opacity: 0; pointer-events: none; transition: opacity 180ms ease; }
+
+.mobile-menu-overlay[hidden] { display: none; }
+
+.mobile-menu-open .mobile-menu-overlay { opacity: 1; pointer-events: auto; }
+
+.mobile-menu-top { position: absolute; top: 1.25rem; left: 1.75rem; right: 1.75rem; display: flex; align-items: center; justify-content: space-between; }
+
+.mobile-menu-top .brand { color: #35281E; text-decoration: none; font-size: 18pt; }
+
+.mobile-menu-close { border: none; background: transparent; width: 40px; height: 40px; padding: 0; cursor: pointer; color: #35281E; }
+
+.mobile-menu-close span { display: block; width: 100%; height: 100%; position: relative; }
+
+.mobile-menu-close span::before, .mobile-menu-close span::after { content: ""; position: absolute; top: 50%; left: 50%; width: 26px; height: 2px; background: currentColor; transform-origin: center; }
+
+.mobile-menu-close span::before { transform: translate(-50%, -50%) rotate(45deg); }
+
+.mobile-menu-close span::after { transform: translate(-50%, -50%) rotate(-45deg); }
+
+.mobile-menu-nav { display: grid; gap: 1.4rem; text-align: center; }
+
+.mobile-menu-nav a { font-size: 2.1rem; text-decoration: none; color: #35281E; }
+
+body.mobile-menu-open { overflow: hidden; }
+
+.mobile-menu-open .top-nav, .mobile-menu-open .top-nav a, .mobile-menu-open .menu-toggle { color: #35281E; }
 
 /* Homepage sections */
 .about-section, .services-section { padding: 2rem 0; }
@@ -375,10 +415,16 @@ a:hover { text-decoration: underline; }
 
 .service-card p { padding: 1rem 1.25rem 1.5rem; line-height: 1.6; }
 
-@media (max-width: 960px) { .about-grid { grid-template-columns: 1fr; } }
+@media (max-width: 960px) { .about-grid { grid-template-columns: 1fr; }
+  .top-nav { padding: 1.1rem 1.25rem; }
+  .top-nav-menu { display: none; }
+  .menu-toggle { display: inline-flex; }
+  .mobile-menu-nav a { font-size: 1.9rem; } }
 @media (max-width: 640px) { .main-content { padding: 3rem 1.5rem; }
   .about-section, .services-section { padding: 3.5rem 0; }
-  .btn.dark { width: 100%; text-align: center; } }
+  .btn.dark { width: 100%; text-align: center; }
+  .mobile-menu-top { left: 1.25rem; right: 1.25rem; }
+  .mobile-menu-nav a { font-size: 1.7rem; } }
 /* About page */
 .about-page { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 3rem; align-items: start; }
 
