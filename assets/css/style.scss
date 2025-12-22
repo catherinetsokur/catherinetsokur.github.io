@@ -137,7 +137,9 @@
   vertical-align: middle;
   color: white;
   background-image: url("/assets/images/hero-banner.png");
-  height: 570px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 5%;
 }
 
 .project-name{
