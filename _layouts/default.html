@@ -29,6 +29,10 @@
              class="{% if page.url == '/philosophy/' %}active{% endif %}">
             Philosophy
           </a>
+          <a href="{{ '/working-together/' | relative_url }}"
+             class="{% if page.url == '/working-together/' %}active{% endif %}">
+            Working together
+          </a>
           <a href="{{ '/contact/' | relative_url }}"
              class="{% if page.url == '/contact/' %}active{% endif %}">
             Contact
@@ -63,6 +67,7 @@
       <nav class="mobile-menu-nav" aria-label="Mobile">
         <a href="{{ '/about/' | relative_url }}">About</a>
         <a href="{{ '/philosophy/' | relative_url }}">Philosophy</a>
+        <a href="{{ '/working-together/' | relative_url }}">Working together</a>
         <a href="{{ '/contact/' | relative_url }}">Contact</a>
       </nav>
     </div>
@@ -90,6 +95,8 @@
           <a href="{{ '/about/' | relative_url }}">About</a>
           <span class="site-footer-divider" aria-hidden="true">|</span>
           <a href="{{ '/philosophy/' | relative_url }}">Philosophy</a>
+          <span class="site-footer-divider" aria-hidden="true">|</span>
+          <a href="{{ '/working-together/' | relative_url }}">Working together</a>
           <span class="site-footer-divider" aria-hidden="true">|</span>
           <a href="{{ '/contact/' | relative_url }}">Contact</a>
         </div>
