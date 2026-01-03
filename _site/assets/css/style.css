@@ -361,7 +361,7 @@ a:hover { text-decoration: underline; }
 
 .top-nav-menu a.active { text-decoration: underline; }
 
-.page-header { background-color: #E5E4E2; }
+.page-header { background-color: #867B72; }
 
 /* Homepage */
 .hero { margin-top: -80px; padding-top: 10rem; padding-bottom: 2.5rem; text-align: center; vertical-align: middle; color: white; background-image: url("/assets/images/hero-banner.png"); background-size: cover; background-repeat: no-repeat; background-position: center 5%; }
@@ -450,7 +450,7 @@ body.mobile-menu-open { overflow: hidden; }
 
 .default-page-photo img { width: 100%; display: block; border-radius: 1rem; box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12); object-fit: cover; }
 
-.default-page-section li { margin-left: 30px; padding-left: 10px; }
+.about-section li, .default-page-section li { margin-left: 30px; padding-left: 10px; }
 
 .working-intro { max-width: 960px; margin: 0 auto 2.5rem; padding: 0 2rem; display: grid; gap: 1.25rem; }
 
