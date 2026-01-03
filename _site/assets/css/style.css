@@ -407,7 +407,7 @@ body.mobile-menu-open { overflow: hidden; }
 .mobile-menu-open .top-nav, .mobile-menu-open .top-nav a, .mobile-menu-open .menu-toggle { color: #35281E; }
 
 /* Homepage sections */
-.about-section, .services-section { padding: 2rem 0; }
+.about-section, .services-section { padding: 1rem 0; }
 
 .about-grid, .services-grid, .section-header { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
 
@@ -454,7 +454,7 @@ p.highlighted { font-weight: bold; font-style: italic; }
 
 .about-section li, .default-page-section li { margin-left: 30px; padding-left: 10px; }
 
-.working-intro { max-width: 960px; margin: 0 auto 2.5rem; padding: 0 2rem; display: grid; gap: 1.25rem; }
+.working-intro { max-width: 960px; margin: 0 auto 1rem; padding: 0 2rem; display: grid; gap: 1.25rem; }
 
 .working-services { max-width: 1200px; margin: 0 auto 1rem; }
 
