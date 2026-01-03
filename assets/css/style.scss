@@ -285,7 +285,7 @@ body.mobile-menu-open {
 /* Homepage sections */
 .about-section,
 .services-section {
-  padding: 1rem 0;
+  padding-top: 1rem;
 }
 
 .about-grid,
@@ -293,7 +293,6 @@ body.mobile-menu-open {
 .section-header {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
 }
 .services-grid{
   padding-bottom: 2rem;
@@ -304,6 +303,7 @@ body.mobile-menu-open {
   grid-template-columns: minmax(280px, 1fr) minmax(320px, 1.1fr);
   gap: 3.5rem;
   align-items: center;
+  padding-bottom: 2rem;
 }
 
 .about-image img {
@@ -320,7 +320,7 @@ body.mobile-menu-open {
 
 .section-header {
   text-align: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .services-grid {
@@ -391,7 +391,7 @@ body.mobile-menu-open {
 
   .about-section,
   .services-section {
-  padding: 3.5rem 0;
+    padding-bottom: 1rem;
   }
 
   .btn.dark {
