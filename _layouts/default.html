@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: 'en-US' }}">
   <head>
+    <title>{{ site.title }} | {{ site.description }}</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="I help individual contributors, managers, and leaders navigate growth and leadership challenges, and address organisational, operational, and alignment issues that impede execution and slow down progress.">
 
     <link rel="icon" href="{{ '/assets/images/favicon.ico' | relative_url }}" type="image/x-icon">
 
@@ -16,7 +18,7 @@
 
     <header class="top-nav" role="banner">
       <a class="brand" href="{{ '/' | relative_url }}">
-        {{ site.title | default: site.github.repository_name }}
+        {{ site.title }}
       </a>
 
       <div class="nav-actions">
