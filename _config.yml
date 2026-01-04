@@ -1,6 +1,9 @@
 remote_theme: pages-themes/cayman@v0.2.0
+
 plugins:
-- jekyll-remote-theme
+  - jekyll-remote-theme
+  - jekyll-sitemap
 
 title: "Catherine thinks..."
 description: "Growing people and organisations for maximum impact"
+url: "https://catherinethinks.com"
