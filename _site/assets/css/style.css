@@ -361,7 +361,7 @@ a:hover { text-decoration: underline; }
 
 .top-nav-menu a.active { text-decoration: underline; }
 
-.page-header { background-color: #867B72; }
+.page-header { background-color: #756663; }
 
 /* Homepage */
 .hero { margin-top: -80px; padding-top: 10rem; padding-bottom: 2.5rem; text-align: center; vertical-align: middle; color: white; background-image: url("/assets/images/hero-banner.png"); background-size: cover; background-repeat: no-repeat; background-position: center 5%; }
