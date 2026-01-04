@@ -364,7 +364,7 @@ a:hover { text-decoration: underline; }
 .page-header { background-color: #756663; }
 
 /* Homepage */
-.hero { margin-top: -80px; padding-top: 10rem; padding-bottom: 2.5rem; text-align: center; vertical-align: middle; color: white; background-image: url("/assets/images/hero-banner.png"); background-size: cover; background-repeat: no-repeat; background-position: center 5%; }
+.hero { margin-top: -80px; padding-top: 10rem; padding-bottom: 2.5rem; text-align: center; vertical-align: middle; color: white; background-image: url("/assets/images/hero-banner.webp"); background-size: cover; background-repeat: no-repeat; background-position: center 5%; }
 
 .project-name { width: 60%; margin: auto; font-weight: normal; margin-bottom: 2rem; }
 
