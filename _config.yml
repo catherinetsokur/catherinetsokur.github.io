@@ -1,10 +1,16 @@
-#remote_theme: pages-themes/cayman@v0.2.0
-theme: jekyll-theme-cayman
+remote_theme: pages-themes/cayman@v0.2.0
 
 plugins:
-#  - jekyll-remote-theme
+  - jekyll-remote-theme
   - jekyll-sitemap
 
-title: "Catherine thinks..."
+title: "Catherine Tsokur"
 description: "Growing people and organisations for maximum impact"
 url: "https://catherinethinks.com"
+
+brand_name: "Catherine thinks..."
+social:
+  name: "Catherine Tsokur"
+  links:
+    - "https://www.linkedin.com/in/catherinetsokur/"
+    - "https://github.com/catherinetsokur"
