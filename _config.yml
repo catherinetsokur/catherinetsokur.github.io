@@ -1,7 +1,8 @@
-remote_theme: pages-themes/cayman@v0.2.0
+#remote_theme: pages-themes/cayman@v0.2.0
+theme: jekyll-theme-cayman
 
 plugins:
-  - jekyll-remote-theme
+#  - jekyll-remote-theme
   - jekyll-sitemap
 
 title: "Catherine thinks..."
