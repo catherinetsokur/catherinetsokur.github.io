@@ -3,12 +3,17 @@ remote_theme: pages-themes/cayman@v0.2.0
 plugins:
   - jekyll-remote-theme
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 title: "Catherine Tsokur"
-description: "Growing people and organisations for maximum impact"
-url: "https://catherinethinks.com"
+tagline: "Growing people and organisations for maximum impact"
+description: "I help individuals and leaders navigate growth and leadership challenges, and address organisational and alignment issues that slow down progress."
 
 brand_name: "Catherine thinks..."
+url: "https://catherinethinks.com"
+lang: "en"
+locale: "en_GB"
+
 social:
   name: "Catherine Tsokur"
   links:
