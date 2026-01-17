@@ -472,6 +472,10 @@ p.highlighted { font-weight: bold; font-style: italic; }
 
 .small-note { font-style: italic; font-size: 80%; }
 
+.offers { max-width: 960px; margin: 2rem auto; padding-bottom: 0.5rem; }
+
+.offers h2 { text-align: center; }
+
 /* Contact page */
 .contact-page { max-width: 800px; margin: 4rem auto 6rem; padding: 0 2rem; display: grid; grid-template-columns: 1fr; gap: 2rem; }
 
