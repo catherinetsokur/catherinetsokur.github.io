@@ -6,15 +6,29 @@ class: default
 ---
 
 <section class="blog-overview">
-<h1>Blog</h1>
+  <h1>Blog</h1>
+  <div class="blog-intro-text">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias deleniti voluptas enim veniam quibusdam? Vel accusantium fugit, dolorem quae soluta aspernatur maxime nesciunt fuga assumenda consectetur, minus odio dolores debitis?
+  </div>
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      <small>{{ post.date | date: "%Y-%m-%d" }}</small>
-    </li>
-  {% endfor %}
-</ul>
-
+  <ul class="blog-list">
+    {% for post in site.posts %}
+      <li class="blog-card">
+        <a class="blog-card-link" href="{{ post.url | relative_url }}">
+          <div class="blog-card-image">
+            {% if post.image %}
+              <img src="{{ '/assets/images/blogposts/' | append: post.image | relative_url }}" alt="{{ post.title }}">
+            {% endif %}
+          </div>
+          <div class="blog-card-content">
+            <p class="blog-card-date">{{ post.date | date: "%b %d, %Y" }}</p>
+            <h2 class="blog-card-title">{{ post.title }}</h2>
+            {% if post.preview_text %}
+              <p class="blog-card-preview">{{ post.preview_text }}</p>
+            {% endif %}
+          </div>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
 </section>
