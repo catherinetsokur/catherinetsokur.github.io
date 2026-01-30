@@ -35,14 +35,14 @@
              class="{% if page.url == '/working-together/' %}active{% endif %}">
             Working together
           </a>
+          <a href="{{ '/blog/' | relative_url }}"
+             class="{% if page.url == '/blog/' or page.url contains '/blog/' %}active{% endif %}">
+            Blog
+          </a>
           <a href="{{ '/contact/' | relative_url }}"
              class="{% if page.url == '/contact/' %}active{% endif %}">
             Contact
           </a>
-          <a href="{{ '/blog/' | relative_url }}"
-             class="{% if page.url == '/blog/' or page.url contains '/blog/' %}active{% endif %}">
-            Blog
-        </a>
 
         </nav>
 
@@ -69,8 +69,8 @@
         <a href="{{ '/about/' | relative_url }}">About</a>
         <a href="{{ '/philosophy/' | relative_url }}">Philosophy</a>
         <a href="{{ '/working-together/' | relative_url }}">Working together</a>
-        <a href="{{ '/contact/' | relative_url }}">Contact</a>
         <a href="{{ '/blog/' | relative_url }}">Blog</a>
+        <a href="{{ '/contact/' | relative_url }}">Contact</a>
       </nav>
     </div>
 
@@ -100,9 +100,9 @@
           <span class="site-footer-divider" aria-hidden="true">|</span>
           <a href="{{ '/working-together/' | relative_url }}">Working together</a>
           <span class="site-footer-divider" aria-hidden="true">|</span>
-          <a href="{{ '/contact/' | relative_url }}">Contact</a>
-          <span class="site-footer-divider" aria-hidden="true">|</span>
           <a href="{{ '/blog/' | relative_url }}">Blog</a>
+          <span class="site-footer-divider" aria-hidden="true">|</span>
+          <a href="{{ '/contact/' | relative_url }}">Contact</a>
         </div>
         <div class="site-footer-note">
           © 2026 Catherine Tsokur. All rights reserved.

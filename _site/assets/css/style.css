@@ -520,3 +520,6 @@ p.highlighted { font-weight: bold; font-style: italic; }
 @media (max-width: 860px) { .blog-card-link { grid-template-columns: 1fr; }
   .blog-card { padding: 1.25rem; }
   .blog-card-content { padding-top: 0.5rem; } }
+.blogpost .header-image { border-radius: 1.4rem; }
+
+.blogpost-date { font-size: 90%; padding-bottom: 2em; }

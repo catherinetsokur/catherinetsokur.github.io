@@ -5,7 +5,10 @@ layout: default
 <section class="blogpost">
   <article>
     <h1>{{ page.title }}</h1>
-    <p><small>{{ page.date | date: "%Y-%m-%d" }}</small></p>
+    <div class="blogpost-date">{{ page.date | date: "%b %d, %Y" }}</div>
+    {% if page.image %}
+        <img class="header-image" src="{{ '/assets/images/blogposts/' | append: page.image | relative_url }}" alt="{{ page.title }}">
+    {% endif %}
     {{ content }}
   </article>
 </section>
