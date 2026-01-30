@@ -497,4 +497,4 @@ p.highlighted { font-weight: bold; font-style: italic; }
 
 .privacy-note { font-size: 80%; font-style: italic; margin: 0 auto; }
 
-.blogpost { max-width: 900px; margin: 0 auto 1rem; padding: 0 2rem; }
+.blogpost, .blog-overview { max-width: 900px; margin: 0 auto 1rem; padding: 0 2rem; }
