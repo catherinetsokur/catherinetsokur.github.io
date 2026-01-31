@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+
+    
+
+    <link rel="stylesheet"
+          href="/assets/css/style.css?v=6c5abe9cd688809f6f1c0062e377967b96f7bd23">
+
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Setting up a website: Beyond code | Catherine Tsokur</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Setting up a website: Beyond code" />
+<meta property="og:locale" content="en_GB" />
+<meta name="description" content="Recently, I’ve set up my personal website. What seemed like a straightforward technical exercise turned out to be a journey of discovery, problem-solving and balancing trade-offs. In this post, I will share my journey with you, from existential questions to technical implementation." />
+<meta property="og:description" content="Recently, I’ve set up my personal website. What seemed like a straightforward technical exercise turned out to be a journey of discovery, problem-solving and balancing trade-offs. In this post, I will share my journey with you, from existential questions to technical implementation." />
+<link rel="canonical" href="http://localhost:4000/blog/2026/01/31/setting-up-website-beyond-code.html" />
+<meta property="og:url" content="http://localhost:4000/blog/2026/01/31/setting-up-website-beyond-code.html" />
+<meta property="og:site_name" content="Catherine Tsokur" />
+<meta property="og:image" content="http://localhost:4000/blogpost_2016-01-30.webp" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-01-31T16:05:00+01:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4000/blogpost_2016-01-30.webp" />
+<meta property="twitter:title" content="Setting up a website: Beyond code" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-01-31T16:05:00+01:00","datePublished":"2026-01-31T16:05:00+01:00","description":"Recently, I’ve set up my personal website. What seemed like a straightforward technical exercise turned out to be a journey of discovery, problem-solving and balancing trade-offs. In this post, I will share my journey with you, from existential questions to technical implementation.","headline":"Setting up a website: Beyond code","image":"http://localhost:4000/blogpost_2016-01-30.webp","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2026/01/31/setting-up-website-beyond-code.html"},"url":"http://localhost:4000/blog/2026/01/31/setting-up-website-beyond-code.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class=" body-content">
+
+    <header class="top-nav" role="banner">
+      <a class="brand" href="/">
+        Catherine thinks...
+      </a>
+
+      <div class="nav-actions">
+        <nav class="top-nav-menu">
+          <a href="/about/"
+             class="">
+            About
+          </a>
+          <a href="/philosophy/"
+             class="">
+            Philosophy
+          </a>
+          <a href="/working-together/"
+             class="">
+            Working together
+          </a>
+          <a href="/blog/"
+             class="active">
+            Blog
+          </a>
+          <a href="/contact/"
+             class="">
+            Contact
+          </a>
+
+        </nav>
+
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="menu-lines" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-menu-overlay" id="mobile-menu" hidden>
+      <div class="mobile-menu-top">
+        <a class="brand" href="/">
+          Catherine thinks...
+        </a>
+        <button class="mobile-menu-close" type="button" aria-label="Close navigation">
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+      <nav class="mobile-menu-nav" aria-label="Mobile">
+        <a href="/about/">About</a>
+        <a href="/philosophy/">Philosophy</a>
+        <a href="/working-together/">Working together</a>
+        <a href="/blog/">Blog</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+    </div>
+
+    
+    
+
+    <main id="content" class="main-content" role="main">
+      <section class="blogpost">
+  <article>
+    <h1>Setting up a website: Beyond code</h1>
+    <div class="blogpost-date">Jan 31, 2026</div>
+    
+        <img class="header-image" src="/assets/images/blogposts/blogpost_2016-01-30.webp" alt="Setting up a website: Beyond code">
+    
+    <p>Recently, I’ve set up my personal website. What seemed like a straightforward technical exercise turned out to be a journey of discovery, problem-solving and balancing trade-offs. In this post, I will share my journey with you, from existential questions to technical implementation.</p>
+
+<p>In building a website, I distinguish two parts: the substance (content, structure and style) and the technical implementation (how it is built, published, hosted, and discovered). It’s common to assume that the substance leads the implementation. During my work, I observed a different dynamic. Both evolved hand-in-hand, informed by experimentation and shaped by decision-making. This is not surprising because that’s how successful companies work, promoting cross-functional collaboration, experimentation and iterative development with a fast feedback loop.</p>
+
+<h2 id="purpose">Purpose</h2>
+<p><em>“Begin with the end in mind”</em> is one of my favourite principles, and I often apply it in what I do. The website was no exception. A clear understanding of what you want to achieve by having a website drives further choices for content, structure, style and appropriate tooling.</p>
+
+<p>This part requires a deep self-reflection and a search for internal motivation and meaning. The questions I found the most helpful:</p>
+
+<ol>
+  <li><em>“Why do I want a website?”</em> This question provided the source of motivation.</li>
+  <li><em>“What differentiates me?”</em> This is a “unique value proposition” question. It helped me connect with my core strengths and clarify my value.</li>
+  <li><em>“Who can benefit and how?”</em> This question helped me shift focus from myself to others.</li>
+</ol>
+
+<h2 id="perception">Perception</h2>
+<p>Content, structure and styling shape the perception. They emerge from the purpose and emphasise it. Bold colours and a portfolio of designs indicate a creative mind behind it, and a dark background with code snippets hints at software development. Those elements convey the identity behind the website.</p>
+
+<p>Thinking about my identity, I developed a clear idea of the design, a rough idea of the structure and a very vague idea of the content. I was tempted to refine it before moving to the next step, but I quickly caught myself. Thinking like this leads to analysis paralysis. This was an important reflection point that made me switch gears and start putting my ideas into practice.</p>
+
+<h2 id="exploration-site-building-platforms">Exploration: Site-building Platforms</h2>
+<p>The first choice I faced was a classic “build or buy” trade-off.</p>
+
+<p>Having been a developer in past, I knew I was capable of whipping up some HTML &amp; CSS. I also knew my limits - my background was in backend development and not in designing professional websites. I explored platforms offering highly customisable layouts - Squarespace, WordPress, and GoDaddy website builder - selecting them from a broader pool based on the balance of capabilities, ease of use and price.</p>
+
+<p>All these platforms allow you to select the template that’s closest to what you want and customise it. Choosing between them is a matter of personal preference. They offer different price tiers and a broad set of features, including a custom domain, selling capabilities and AI features. I preferred Squarespace for clean, professional-looking designs and the most intuitive site builder.</p>
+
+<p>Experimenting with layouts and styles gave me a better feel for how I wanted my website to look. A custom layout builder made it very easy to see and assess changes instantly.</p>
+
+<p>Exploring further, I found the blogging capabilities on Squarespace limited for my liking. This was a pivotal moment. I could continue with Squarespace. At the same time, seeing the simplicity of the design, I felt confident that I could build it, especially with AI tools at my disposal. Building it myself would give me more control and flexibility. It would also be cheaper. Last but not least, it would be more fun, and I would have a use case to try vibe-coding. While pushing for progress, it’s important to pause and validate whether we are still pushing in the right direction. In this case, for me, it was time to change direction.</p>
+
+<h2 id="building">Building</h2>
+<p>I looked for ways to create a simple static website, like mine, with blog posts. I selected Jekyll, a static site generator, because of its simplicity, <a href="http://jekyllthemes.org/">rich selection of themes</a>, and flexibility in understanding both HTML and Markdown.</p>
+
+<p>As it often happens in development, one choice affects another. Now I had to decide on hosting. Site-building platforms offer this capability out of the box, and opting out of them, I needed an alternative. Between Netlify and GitLab Pages, I chose the latter, as it was more familiar and simpler for me to manage.</p>
+
+<p>Once the “Hello world” with Jekyll was up and running both locally and on <a href="http://catherinetsokur.github.io">catherinetsokur.github.io</a>, I dusted off my developer hat and put it on.</p>
+
+<h2 id="evolution-content-structure-and-styling">Evolution: Content, Structure and Styling</h2>
+<p>From a broad range of available Jekyll themes, I picked the one closest to the layout I wanted to create (Cayman), and spent some time customising it, both manually and with AI. This led to the final look of the website.</p>
+
+<p>I started creating pages and adding the content. The content reshaped the structure. This work challenged me to express my thoughts clearly without an overwhelming amount of details. I had to make decisions about what belonged on each page and how to create intuitive navigation to support consistency throughout the website. The tone of voice is another implicit element which had to be maintained in coherence with the created identity.</p>
+
+<h2 id="just-a-little-bit-of-backend">Just a Little Bit of Backend</h2>
+<p>As much as we want to foresee everything and prepare for it, we are humans, and humans make mistakes.</p>
+
+<p>When I was just about finished with the last page, “Contact”, I realised that the beautiful form I created on my <em>static</em> website wasn’t going to send itself. I started contemplating the idea of replacing everything I’ve done with a backend application. This meant a lot of rework. I paused before making this decision - I could do that, but this solution was clearly disproportionate to the problem. I looked for alternatives and was delighted to find third-party services that could be used to send the form from the frontend. I tried a few and integrated <a href="http://formsubmit.co/">Formsubmit</a> with my contact form.</p>
+
+<h2 id="publishing">Publishing</h2>
+<p>When the website looked and worked as expected, it was time to publish it.</p>
+
+<p>At this stage, decisions had to be made about where to buy the domain name and where to manage DNS records. This could be the same provider or different, with trade-offs in cost, control, and security.</p>
+
+<p>I chose Cloudflare for both, because of convenience, cost and familiarity. I purchased the domain and configured DNS records to point to my GitHub Pages. On the GitHub side, I <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages">verified the custom domain</a> and <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site">configured it for my Pages</a>.</p>
+
+<p>This brought <a href="http://catherinethinks.com">catherinethinks.com</a> to life!</p>
+
+<h2 id="seo-magic">SEO Magic</h2>
+<p>The last step was making my website discoverable in search.</p>
+
+<p>I verified ownership of the site in Google Search Console, submitted the sitemap generated by a Jekyll plugin, and created a <code class="language-plaintext highlighter-rouge">robots.txt</code> file to guide search engine crawlers and allow proper indexing.</p>
+
+<p>To improve SEO, I adjusted the <code class="language-plaintext highlighter-rouge">&lt;title&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;h1&gt;</code>, and <code class="language-plaintext highlighter-rouge">&lt;meta&gt;</code> tags to contain relevant keywords. Good to know - Jekyll has its own way of managing SEO tags through configuration.</p>
+
+<p>For the final optimisation, I used <a href="https://pagespeed.web.dev/">pagespeed.web.dev</a>. Based on scores and recommendations, I made performance and accessibility improvements because not only do they affect SEO scores, but more importantly, they affect user experience.</p>
+
+<p>The results weren’t instant. It took about a week for the website to appear in search when I googled my name.</p>
+
+<h2 id="privacy-considerations">Privacy Considerations</h2>
+<p>As a data lover, I wanted to use Google Analytics for tracking, but this led me into the GDPR territory. To be fully compliant with European laws, I would have to create a Privacy Policy and show a cookie banner to inform users about tracking. I asked myself: Is collecting more data worth the extra compliance work and the pop-up banner everybody “loves”? I decided that the basic Cloudflare dashboard was sufficient.</p>
+
+<p>This reminded me, however, to add a clarifying text about the use of personal information for contact purposes on the contact form.</p>
+
+<h2 id="closing-thoughts">Closing Thoughts</h2>
+<p>Building my website took me longer than I thought it would, and it entailed more aspects than I imagined, but this was a valuable experience. I sharpened my technical skills, practised content creation and exercised decision-making.</p>
+
+<p>I also did an important internal work, clarifying, even for myself, what I stand for and how I want to add value.</p>
+
+<p>Using AI throughout this project definitely helped me progress faster and expand my capabilities. I learned a lot from this too, and will share more about that in a future post.</p>
+
+  </article>
+</section>
+
+      <footer class="site-footer">
+        <div class="site-footer-primary">
+          <span class="site-footer-name">Catherine Tsokur</span>
+          <a class="site-footer-link" href="https://www.linkedin.com/in/catherinetsokur/" aria-label="Catherine Tsokur on LinkedIn" target="_blank">
+            <img src="/assets/images/linkedin-icon.webp" width="25" height="25" alt="LinkedIn logo" />
+          </a>
+        </div>
+        <div class="site-footer-nav">
+          <a href="/about/">About</a>
+          <span class="site-footer-divider" aria-hidden="true">|</span>
+          <a href="/philosophy/">Philosophy</a>
+          <span class="site-footer-divider" aria-hidden="true">|</span>
+          <a href="/working-together/">Working together</a>
+          <span class="site-footer-divider" aria-hidden="true">|</span>
+          <a href="/blog/">Blog</a>
+          <span class="site-footer-divider" aria-hidden="true">|</span>
+          <a href="/contact/">Contact</a>
+        </div>
+        <div class="site-footer-note">
+          © 2026 Catherine Tsokur. All rights reserved.
+        </div>
+      </footer>
+
+    </main>
+
+    <script>
+      (() => {
+        const toggle = document.querySelector('.menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeButton = mobileMenu?.querySelector('.mobile-menu-close');
+
+        if (!toggle || !mobileMenu || !closeButton) return;
+
+        const openMenu = () => {
+          mobileMenu.hidden = false;
+          document.body.classList.add('mobile-menu-open');
+          toggle.setAttribute('aria-expanded', 'true');
+        };
+
+        const closeMenu = () => {
+          mobileMenu.hidden = true;
+          document.body.classList.remove('mobile-menu-open');
+          toggle.setAttribute('aria-expanded', 'false');
+        };
+
+        toggle.addEventListener('click', () => {
+          if (mobileMenu.hidden) {
+            openMenu();
+          } else {
+            closeMenu();
+          }
+        });
+
+        closeButton.addEventListener('click', closeMenu);
+        mobileMenu.addEventListener('click', (event) => {
+          if (event.target === mobileMenu) {
+            closeMenu();
+          }
+        });
+
+        document.addEventListener('keydown', (event) => {
+          if (event.key === 'Escape' && !mobileMenu.hidden) {
+            closeMenu();
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>

@@ -328,6 +328,8 @@ a:hover { text-decoration: underline; }
 
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 { color: #35281E; }
 
+.main-content code { color: #7B7774; background-color: #f9f9f9; }
+
 .btn.dark { border-radius: 2rem; background-color: #35281E; color: #f9f9f9; padding: 1rem 2rem; }
 
 .btn.dark:hover { background-color: #483C32; }
