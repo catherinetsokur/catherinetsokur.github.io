@@ -39,7 +39,7 @@ Exploring further, I found the blogging capabilities on Squarespace limited for 
 ## Building
 I looked for ways to create a simple static website, like mine, with blog posts. I selected Jekyll, a static site generator, because of its simplicity, [rich selection of themes](http://jekyllthemes.org/), and flexibility in understanding both HTML and Markdown.
 
-As it often happens in development, one choice affects another. Now I had to decide on hosting. Site-building platforms offer this capability out of the box, and opting out of them, I needed an alternative. Between Netlify and GitLab Pages, I chose the latter, as it was more familiar and simpler for me to manage.
+As it often happens in development, one choice affects another. Now I had to decide on hosting. Site-building platforms offer this capability out of the box, and opting out of them, I needed an alternative. Between Netlify and GitHub Pages, I chose the latter, as it was more familiar and simpler for me to manage.
 
 Once the “Hello world” with Jekyll was up and running both locally and on [catherinetsokur.github.io](http://catherinetsokur.github.io), I dusted off my developer hat and put it on.
 
