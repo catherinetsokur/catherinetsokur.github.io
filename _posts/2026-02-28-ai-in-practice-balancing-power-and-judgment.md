@@ -12,7 +12,7 @@ While building my website, I deliberately used AI across different stages of the
 
 # Strengths
 ## Cross-functional team of one
-Building a website requires moving through the full product lifecycle - from brand positioning and design to infrastructure, development, and SEO (as described in my previous post).
+Building a website requires moving through the full product lifecycle - from brand positioning and design to infrastructure, development, and SEO (as described in my [previous post](/blog/2026/01/31/setting-up-website-beyond-code.html)).
 
 Before AI, this would typically require either deep expertise across multiple domains - something rarely found in a single person - or collaboration with a team of specialists. With AI, I could operate as a cross-functional team of one.
 
