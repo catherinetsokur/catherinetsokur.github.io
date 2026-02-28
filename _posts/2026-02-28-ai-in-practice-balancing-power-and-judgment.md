@@ -3,7 +3,7 @@ layout: post
 title: "AI in Practice: Balancing Power and Judgment"
 date: 2026-02-28 16:05:00 +0100
 image: blogpost_2016-02-28.webp
-preview_text: "While building my website, I used AI across the full product lifecycle. The experience revealed where AI genuinely accelerates progress — and where it still requires careful human judgment."
+preview_text: "While building my website, I used AI across the full product lifecycle. The experience revealed where AI genuinely accelerates progress and where it still requires careful human judgment."
 categories: [blog]
 ---
 AI is becoming increasingly common in our professional and personal lives. It brings convenience and capabilities that were previously out of reach. At the same time, I increasingly see AI treated as a silver bullet - with high expectations and a great deal of trust. AI delivers the most value when approached pragmatically: with a clear understanding of both its strengths and its limitations.
