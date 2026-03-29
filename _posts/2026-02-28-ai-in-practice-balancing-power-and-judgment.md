@@ -2,7 +2,7 @@
 layout: post
 title: "AI in Practice: Balancing Power and Judgment"
 date: 2026-02-28 16:05:00 +0100
-image: blogpost_2016-02-28.webp
+image: blogpost_2026-02-28.webp
 preview_text: "While building my website, I used AI across the full product lifecycle. The experience revealed where AI genuinely accelerates progress and where it still requires careful human judgment."
 categories: [blog]
 ---

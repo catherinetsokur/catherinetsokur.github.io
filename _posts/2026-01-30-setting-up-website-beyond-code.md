@@ -2,7 +2,7 @@
 layout: post
 title: "Setting up a website: Beyond code"
 date: 2026-01-31 16:05:00 +0100
-image: blogpost_2016-01-30.webp
+image: blogpost_2026-01-30.webp
 preview_text: "A personal story about building this site, balancing purpose with practical choices, and the lessons learned along the way."
 categories: [blog]
 
