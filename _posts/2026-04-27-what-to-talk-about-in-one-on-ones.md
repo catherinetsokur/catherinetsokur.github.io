@@ -45,7 +45,7 @@ From this perspective, 1:1s serve a dual purpose:
 
 This applies to both the manager and the direct report, even if each views it through the lens of their own role.
 
-## Ensure value
+## Create value
 If you work as an individual contributor, you create value directly. A useful question to reflect on is how you create value and what enables you to do it well.
 
 When you lead others - whether you have formal people management responsibility or not - you create value through their work. The question then becomes how those you lead create value, and how you can help them do it better.
@@ -73,7 +73,7 @@ For managers, it's important to surface issues affecting their direct reports as
 
 Building trust is a prerequisite for open conversations about concerns. And when something important is raised, how you respond matters - following through is key to maintaining that trust.
 
-## Support development
+## Encourage development
 When people perform at their best, they create the most value.
 
 Beyond value creation, there are also aspects of personal satisfaction and motivation to consider. For many of us, growth is rewarding, and mastering new skills often brings fulfilment. In a company context, the goal is to align individual development with performance for the company's benefit.
